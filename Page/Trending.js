@@ -64,14 +64,14 @@ const useSemiPersistentState = (key, initialState) => {
       <div className="container-fluid" >
 
          <Banner/>
-         <div className ="d-flex flex-row justify-content-between topa">
-         <div> <h2>Featured Movie</h2></div>
-         <p>See More</p>
-         </div>
+         
       <div className="d-flex">
         
-        <div className="row py-5 my-5">
-      
+        <div className="row py-5 my-4">
+      <div className ="d-flex flex-row justify-content-between">
+         <div> <h2>Featured Movie</h2></div>
+         <p style={{color:'red'}}>See More {'>'}</p>
+         </div>
           {state.map((Val) => {
             
             const {
