@@ -1,0 +1,70 @@
+:root{
+   
+        box-sizing: border-box;
+        color: #333;
+            font-family: Poppins;line-height: normal;
+}
+*a{
+    text-decoration: none;
+}
+.cont{
+    margin-left: 263px;
+}
+.moviePosters{ 
+    border-radius: 20px;width: 1198px;
+        height: 449px;
+        flex-shrink: 0;margin-top: 38px;
+       background-repeat: no-repeat;
+       background-size:cover;
+}
+.playButton{
+    fill: rgba(246, 243, 243, 0.941);
+        stroke-width: 2px;
+        stroke: rgba(246, 243, 243, 0.941);
+        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.796));
+        backdrop-filter: blur(2px);
+        width: 110px;margin-left:550px;padding-top:170px;
+            height: 110px; display: flex;
+            flex-shrink: 0; align-self: center;justify-items: center;
+}
+.movieTitle{
+    margin-top:31px; display: flex;flex-direction: column;
+}
+.seeTimes{
+    width: 360px;
+        height: 55px;border-radius: 10px;
+            background: #BE123C;margin-top: -10px;
+}
+.seeTime {
+    width: 360px;
+    height: 55px;
+    border-radius: 10px;
+    border-radius: 10px;
+        border: 1px solid #BE123C;
+        background: rgba(190, 18, 60, 0.10);
+    margin-top: 12px;
+}
+.seeTimeText{
+    color:black;padding-top: 13px; justify-content: center;display: flex;vertical-align: middle;
+}
+.seeTimesText{
+    color:white;padding-top: 13px;justify-content: center;display: flex;vertical-align: middle;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 774px auto ;
+   grid-column-gap:25px;
+   grid-row-gap: 20px;
+    padding: 10px;
+}
+.movieDesc{
+    width: 774px;
+}
+.movieRelated{
+    width: 360px;
+        height: 229px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background-image: './related.png';
+            background:  lightgray 50% / cover no-repeat;
+}

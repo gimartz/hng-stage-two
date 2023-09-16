@@ -1,0 +1,49 @@
+.movieType{border-radius: 12px;Width :74px ;Height: 22px;margin-top: -330px;margin-bottom: 320px;
+    background: rgba(243, 244, 246, 0.50);font-size: 12px;margin-left: 8px;
+    backdrop-filter: blur(1px);}
+        .movieFav {
+            border-radius: 30px;
+            Width: 30px;
+            Height: 29.22px;
+            margin-top: -330px;
+            margin-bottom: 320px;
+            fill: rgba(243, 244, 246, 0.50);
+                backdrop-filter: blur(1px);
+            font-size: 12px;
+           
+        }
+        .topa{padding-bottom: -30px;}
+.text-gray{color: #9CA3AF;}
+.load{
+margin-top: 30%;
+}
+.moviePoster{ padding-left: 10px;margin-left: -9px;padding-top: 2px;
+    height: 600px;position: relative;object-fit: contain;
+}
+.inputSearch{
+    border-radius: 6px; background-color: transparent;width: 525px;
+        border: 4px solid (#D1D5DB, #D1D5DB); color: white;
+}
+.btn-watchTrailer { color: white;height:24px;width:137px;text-decoration: none;cursor: pointer;
+    padding: 6px 16px; background-color: #BE123C;justify-items: center;vertical-align: middle;
+}
+.coverHead{
+    color: #FFF; margin-top: 158px;
+        font-family: DM Sans;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;width: 404px;
+}
+.coverContent{
+    color: #FFF;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;width: 302px; margin-top: 32px;
+        line-height: 18px;
+        /* 128.571% */
+}
+.fadeBanner{ height: 7.4rem; margin-top: -80px;margin-left: -9px;
+    background: linear-gradient(100deg, transparent, rgba(37, 37, 37 0.61) 100%),#111 ;
+}
