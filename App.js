@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Page/Trending";
+import Index from "./Page/screen";
 import {Filmdetails}  from './pages/movieList';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>} />       
+        <Route path="/" element={<Index/>} />       
        
                  
            <Route path="/tv-detail/:id" element={<Filmdetails media="tv"/>} />

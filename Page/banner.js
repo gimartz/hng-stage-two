@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import logo from './Logo.png';import './Trending.css'
+import logo from '../assets/Logo.png';import './Trending.css'
 import axios from 'axios';
 import requests from "./axios";
-import imdb from './imd.png';
-import tomato from './tomato.png';
+import imdb from '../assets/imd.png';
+import tomato from '../assets/tomato.png';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -52,7 +52,10 @@ function truncate(string, n){
        <div style={{ backgroundImage:`url("https://image.tmdb.org/t/p/original/${movies?.backdrop_path}")`, backgroundPosition: "center center", backgroundRepeat:"no-repeat",backgroundSize:"cover"}} className="jumbotron jumbotron-fluid moviePoster ">
             <div class="d-flex flex-row justify-content-between p-16 ">
   <div class="p-2"><img src={logo} alt="n"  className="d-inline p-2 "/></div>
-  <div className="p-2 text-white search"><input type='text' onChange={handleSearch } placeholder={'What do want to watch?'} className="inputSearch text-white"/> <FontAwesomeIcon icon={faSearch} /></div>
+  
+  <div className="p-2 text-white search"><input type='text' onChange={handleSearch } placeholder={'What do want to watch?'} className="flex h-10 rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus:ring-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 pr-12 text-white w-full inputSearch text-white"/>
+  <span class="absolute inset-y-0 right-0 flex items-center pr-1"><svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 1024 1024" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></span>
+  </div>
   <div className="p-2 d-inline-flex align-items-center"><a href="#" style={{ textDecoration:"none",color:"white",padding:"16px"}}>Sign in </a><span className="l-12"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
 <circle cx="18" cy="18" r="18" fill="#BE123C"/>
 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +73,7 @@ function truncate(string, n){
                       </div>
   <p className="lead coverContent">{truncate(movies?.overview, 150)}</p>
 
-  <NavLink  className="btn-watchTrailer" to={`/movie-detail/${movies?.id}`} >
+  <NavLink  className="btn-watchTrailer" to={`/tv-detail/${movies?.id}`} >
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18ZM9.5547 7.16795C9.24784 6.96338 8.8533 6.94431 8.52814 7.11833C8.20298 7.29235 8 7.63121 8 8V12C8 12.3688 8.20298 12.7077 8.52814 12.8817C8.8533 13.0557 9.24784 13.0366 9.5547 12.8321L12.5547 10.8321C12.8329 10.6466 13 10.3344 13 10C13 9.66565 12.8329 9.35342 12.5547 9.16795L9.5547 7.16795Z" fill="white"/>
 </svg> Watch Trailer</NavLink>
