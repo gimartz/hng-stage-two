@@ -439,8 +439,8 @@ background-color: #BE123C;
     flex-direction: column;
     gap: 36px;
     left: 467px;
-    position: absolute;
-    top: 2626px;
+    position: fixed;
+   bottom: 0;
 }
 
  .social {
@@ -518,4 +518,130 @@ background-color: #BE123C;
     font-size: 14px;
     bottom: auto;
   }
+}
+.movie-card {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.movie-card .poster {
+    background-image: url(https://cdn.animaapp.com/projects/60fd2757869e989434a4a089/releases/65079c89563939b650df9853/img/poster-image@2x.png);
+    background-size: 100% 100%;
+    height: 370px;
+    position: relative;
+    width: 250px;
+}
+
+.movie-card .rating {
+    height: 29px;
+    left: 16px;
+    position: relative;
+    top: 16px;
+    width: 218px;
+}
+
+.movie-card .TV-series {
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+    align-items: flex-start;
+    backdrop-filter: blur(2px) brightness(100%);
+    background-color: #f3f4f680;
+    border-radius: 12px;
+    display: inline-flex;
+    gap: 10px;
+    left: 0;
+    padding: 3px 8px;
+    position: absolute;
+    top: 4px;
+}
+
+.movie-card .div {
+    color: var(--gray-900);
+    font-family: "DM Sans", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
+
+.movie-card .favorite {
+    -webkit-backdrop-filter: blur(2px) brightness(100%);
+    backdrop-filter: blur(2px) brightness(100%);
+    background-color: #f3f4f680;
+    border-radius: 15px/14.61px;
+    height: 29px;
+    left: 188px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+
+.movie-card .text-wrapper-2 {
+    color: var(--gray-400);
+    font-family: "DM Sans", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.movie-card .stranger-things {
+    color: var(--gray-900);
+    font-family: "DM Sans", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 250px;
+}
+
+.movie-card .rating-2 {
+    align-items: flex-start;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 250px;
+}
+
+.movie-card .div-2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+}
+
+.movie-card .img {
+    height: 17px;
+    object-fit: cover;
+    position: relative;
+    width: 35px;
+}
+
+.movie-card .element {
+    color: var(--gray-900);
+    font-family: "DM Sans", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 12px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.movie-card .pngitem {
+    height: 17px;
+    object-fit: cover;
+    position: relative;
+    width: 16px;
 }
